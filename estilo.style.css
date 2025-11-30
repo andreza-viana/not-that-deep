@@ -31,12 +31,12 @@ nav {
     background-color: #AB126D;
     text-align: left;
 }
-a {
+nav > a {
     padding-left: 20px;
     color: white;
     text-decoration: none;
 }
-a:hover {
+nav > a:hover {
     text-decoration: underline;
     font-weight: bold;
 }
