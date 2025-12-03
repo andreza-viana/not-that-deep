@@ -106,7 +106,7 @@ aside > ul {
     columns: 2;
     background-color: white;
     padding: 8px 10px 10px 20px;
-    list-style-type:'\1F539\00A0\00A0';
+    list-style-type:'\1F539';
     list-style-position: inside;
 }
 ul > li {
