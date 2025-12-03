@@ -10,7 +10,7 @@
 }
 body {
     font-family:var(--fonte-padrao);
-    background-color: antiquewhite;
+    background-color: #BEB8BA;
 }
 header{
     background-color: #3C5E73;
@@ -19,8 +19,8 @@ header{
 header > h1 {
     font-family: ;
     color: white;
-    padding: 40px;
-    
+    padding: 30px 8px 25px 8px;
+    font-size: 2.5em;
 }
 header > p {
     color: white;
@@ -35,39 +35,98 @@ nav > a {
     padding-left: 20px;
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 nav > a:hover {
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: bolder;
+    color: rgb(181, 175, 175);
+}
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
 }
 main > article {
-    background-color: #BEB8BA;
-    padding: 0px 25px 25px 25px;
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px 10px 10px 10px; 
 }
 main > article > h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    background-color: white;
+    background-color: rgba(233, 233, 103, 0.66);
+    color: white;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.434);
     width: auto;
-    padding: 20px;
+    padding: 8px 10px 8px 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.312);
 }
 article > p {
     text-indent: 10px;
     background-color: white;
-    padding: 20px;
+    padding: 17px;
     text-align: justify;
+    line-height:30px;
+}
+article > p > a {
+    text-decoration: none;
+    color: #AB126D;
+    font-weight: bold;
+}
+article > p > a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+article > ul.albuns {
+    columns: 1;
+    padding: 8px 10px 8px 20px;
+    background-color: white;
+    list-style-position: inside;
+    list-style-type:'\1F3B5\00A0\00A0';
+    border-radius: 0px 0px 10px 10px;
 }
 main > aside {
-    padding: 20px;
-    background-color: #BEB8BA;
-    text-align: justify;
+    padding: 15px 20px 10px 20px;    
+}
+aside > h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-color: #b499a1;
+    padding: 7px;
+    padding-left: 15px;;
 }
 aside > p {
     background-color: white;
-    padding: 25px;
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 30px;
+    padding: 10px 10px 2px 20px;
+    margin: auto;
+}
+main > aside > h3 {
+    background-color: #b499a1;
+}
+aside > ul {
+    columns: 3;
+    background-color: white;
+    padding: 8px 10px 10px 20px;
+    list-style-type:'\1F539\00A0\00A0';
+    list-style-position: inside;
+}
+ul > li {
+    line-height: 25px;
 }
 footer {
     padding: 10px;
     background-color: #AB126D;
     color: white;
     text-align: center;
+}
+div.tv {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+}
+div.cinema {
+    background-color: white;
+    margin: auto;
+    padding: 15px;
 }

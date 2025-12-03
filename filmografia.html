@@ -13,6 +13,8 @@
         table {
             width: 700px;
             border-collapse: collapse;
+            margin: auto;
+            overflow-x: auto;
         }
         caption {
             background-color: #1E222D;
@@ -36,6 +38,18 @@
         h1 {
             font-family: var(--fonte-destaque);
         }
+        .tv > table, .cinema > table {
+            width: 600px;
+            overflow-x: auto;
+            position: relative;
+        }
+        .tv > table > thead > tr > th {
+            position: sticky;
+            top: -1px;
+            color: black;
+            background-color: rgb(233, 233, 103);
+        }
+
     </style>
 </head>
 <body>
@@ -54,175 +68,180 @@
             <h2>Filmografia</h2>
             <p>Com o coração cheio de sonhos e ainda descobrindo seus talentos, Demi Lovato estreou na atuação aos dez anos de idade. Mas, foi aos quinze anos que seu nome ganhou destaque. Desde então vieram mais filmes, séries, documentários e até produção executiva em um longa para os cinemas!</p>
             <p>Confira abaixo mais detalhes sobre a carreira super versátil de Demi Lovato!</p>
-            <table>
-                <caption>Televisão</caption>
-                <thead>
-                    <th>Ano</th>
-                    <th>Título</th>
-                    <th>Papel</th>
-                    <th style="width: 300px;">Notas</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="ano">2002 - 2004</td>
-                        <td class="titulo">Barney & Friends</td>
-                        <td>Angela</td>
-                        <td>Temporadas 7 e 8 <br>(10 episódios)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2006</td>
-                        <td class="titulo">Prision Break</td>
-                        <td>Danielle Curtin</td>
-                        <td>"First Down" <br>(Temporada 2, Episódio 4)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2007-2008</td>
-                        <td class="titulo">As The Bell Rings</td>
-                        <td>Charlotte Adams</td>
-                        <td>Temporada 1 <br>(15 episódios)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2007</td>
-                        <td class="titulo">Just Jordan</td>
-                        <td>Nicole</td>
-                        <td>"Slippery When Wet" <br> ('Temporada 2, episódio 6)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2008</td>
-                        <td class="titulo">Camp Rock</td>
-                        <td>Mitchie Torres</td>
-                        <td rowspan="2">Disney Channel</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2009</td>
-                        <td class="titulo">Princess Protection Program</td>
-                        <td>Princesa Rosalinda Marie Montoya Fioré / Rosie Gonzales</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2009-2011</td>
-                        <td class="titulo">Sonny With a Chance</td>
-                        <td>Sonny Munroe</td>
-                        <td>Temporadas 1 e 2 <br> (47 episódios)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano" rowspan="2">2010</td>
-                        <td class="titulo">Grey's Anatomy</td>
-                        <td>Hayley May</td>
-                        <td>"Shinny Happy People" <br> (Episódio 22, Temporada 6)</td>
-                    </tr>
-                    <tr>
-                        <td class="titulo">Camp Rock 2: The Final Jam</td>
-                        <td>Mitchie Torres</td>
-                        <td>Disney Channel</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2011</td>
-                        <td class="titulo">Quando Toca o Sino</td>
-                        <td>Ela mesma</td>
-                        <td>"Encontro com Demi Lovato" <br> (Temporada 1)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2012-2013</td>
-                        <td class="titulo">The X Factor</td>
-                        <td>Jurada</td>
-                        <td>Temporadas 2 e 3 <br>(54 Episódios)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2013-2014</td>
-                        <td class="titulo">Glee</td>
-                        <td>Dani</td>
-                        <td>Temporada 5 <br>(4 episódios)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2014</td>
-                        <td class="titulo">Matador</td>
-                        <td>Convidada da festa</td>
-                        <td>"Quid Go Pro" <br> (Temporada 1, Episódio 1)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2015</td>
-                        <td class="titulo">From Dusk Till Dawn: The Series</td>
-                        <td>Maia</td>
-                        <td>Temporada 8 <br>(3 episódios)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2020</td>
-                        <td class="titulo">Will & Grace</td>
-                        <td>Jenny</td>
-                        <td>Temporada 11 <br> (3 episódios)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2021</td>
-                        <td class="titulo">Unidentified with Demi Lovato</td>
-                        <td rowspan="2">Ela mesma</td>
-                        <td>(4 episódios)</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2023</td>
-                        <td class="titulo">Dave</td>
-                        <td>Met Gala</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <caption>Cinema</caption>
-                <thead>
-                    <tr>
+            <div class="tv">
+                <table>
+                    <caption>Televisão</caption>
+                    <thead>
                         <th>Ano</th>
                         <th>Título</th>
                         <th>Papel</th>
-                        <th>Notas</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="ano">2012</td>
-                        <td class="titulo">Demi Lovato: Stay Strong</a></td>
-                        <td>Ela mesma</td>
-                        <td>Documentário</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2" class="ano">2017</td>
-                        <td class="titulo">Smurfs: The Lost Village</td>
-                        <td>Smurfette</td>
-                        <td>Dublagem</td>
-                    </tr>
-                    <tr>
-                        <td class="titulo">Demi Lovato: Simply Complicated</td>
-                        <td>Ela mesma</td>
-                        <td>Documentário</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2018</td>
-                        <td class="titulo">Charming</td>
-                        <td>Lenore / Lenny</td>
-                        <td>Dublagem</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2020</td>
-                        <td class="titulo">Eurovision Song Contest: The Story of Fire Saga</td>
-                        <td>Katiana Lindsdóttir</td>
-                        <td>Netflix</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2021</td>
-                        <td class="titulo">Demi Lovato: Dancing With the Devil</td>
-                        <td rowspan="2">Ela mesma</td>
-                        <td>Documentário</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2024</td>
-                        <td class="titulo">Child Star</td>
-                        <td>Estreia como diretora!</td>
-                    </tr>
-                    <tr>
-                        <td class="ano">2025</td>
-                        <td class="titulo">Tow</td>
-                        <td>Nova</td>
-                        <td>Pós-produção</td>
-                    </tr>
-                </tbody>
-            </table>
+                        <th style="width: 300px;">Notas</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ano">2002 - 2004</td>
+                            <td class="titulo">Barney & Friends</td>
+                            <td>Angela</td>
+                            <td>Temporadas 7 e 8 <br>(10 episódios)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2006</td>
+                            <td class="titulo">Prision Break</td>
+                            <td>Danielle Curtin</td>
+                            <td>"First Down" <br>(Temporada 2, Episódio 4)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2007-2008</td>
+                            <td class="titulo">As The Bell Rings</td>
+                            <td>Charlotte Adams</td>
+                            <td>Temporada 1 <br>(15 episódios)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2007</td>
+                            <td class="titulo">Just Jordan</td>
+                            <td>Nicole</td>
+                            <td>"Slippery When Wet" <br> ('Temporada 2, episódio 6)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2008</td>
+                            <td class="titulo">Camp Rock</td>
+                            <td>Mitchie Torres</td>
+                            <td rowspan="2">Disney Channel</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2009</td>
+                            <td class="titulo">Princess Protection Program</td>
+                            <td>Princesa Rosalinda Marie Montoya Fioré / Rosie Gonzales</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2009-2011</td>
+                            <td class="titulo">Sonny With a Chance</td>
+                            <td>Sonny Munroe</td>
+                            <td>Temporadas 1 e 2 <br> (47 episódios)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano" rowspan="2">2010</td>
+                            <td class="titulo">Grey's Anatomy</td>
+                            <td>Hayley May</td>
+                            <td>"Shinny Happy People" <br> (Episódio 22, Temporada 6)</td>
+                        </tr>
+                        <tr>
+                            <td class="titulo">Camp Rock 2: The Final Jam</td>
+                            <td>Mitchie Torres</td>
+                            <td>Disney Channel</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2011</td>
+                            <td class="titulo">Quando Toca o Sino</td>
+                            <td>Ela mesma</td>
+                            <td>"Encontro com Demi Lovato" <br> (Temporada 1)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2012-2013</td>
+                            <td class="titulo">The X Factor</td>
+                            <td>Jurada</td>
+                            <td>Temporadas 2 e 3 <br>(54 Episódios)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2013-2014</td>
+                            <td class="titulo">Glee</td>
+                            <td>Dani</td>
+                            <td>Temporada 5 <br>(4 episódios)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2014</td>
+                            <td class="titulo">Matador</td>
+                            <td>Convidada da festa</td>
+                            <td>"Quid Go Pro" <br> (Temporada 1, Episódio 1)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2015</td>
+                            <td class="titulo">From Dusk Till Dawn: The Series</td>
+                            <td>Maia</td>
+                            <td>Temporada 8 <br>(3 episódios)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2020</td>
+                            <td class="titulo">Will & Grace</td>
+                            <td>Jenny</td>
+                            <td>Temporada 11 <br> (3 episódios)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2021</td>
+                            <td class="titulo">Unidentified with Demi Lovato</td>
+                            <td rowspan="2">Ela mesma</td>
+                            <td>(4 episódios)</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2023</td>
+                            <td class="titulo">Dave</td>
+                            <td>Met Gala</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div class="cinema">
+                    <table>
+                    <caption>Cinema</caption>
+                    <thead>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Título</th>
+                            <th>Papel</th>
+                            <th>Notas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ano">2012</td>
+                            <td class="titulo">Demi Lovato: Stay Strong</a></td>
+                            <td>Ela mesma</td>
+                            <td>Documentário</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="ano">2017</td>
+                            <td class="titulo">Smurfs: The Lost Village</td>
+                            <td>Smurfette</td>
+                            <td>Dublagem</td>
+                        </tr>
+                        <tr>
+                            <td class="titulo">Demi Lovato: Simply Complicated</td>
+                            <td>Ela mesma</td>
+                            <td>Documentário</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2018</td>
+                            <td class="titulo">Charming</td>
+                            <td>Lenore / Lenny</td>
+                            <td>Dublagem</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2020</td>
+                            <td class="titulo">Eurovision Song Contest: The Story of Fire Saga</td>
+                            <td>Katiana Lindsdóttir</td>
+                            <td>Netflix</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2021</td>
+                            <td class="titulo">Demi Lovato: Dancing With the Devil</td>
+                            <td rowspan="2">Ela mesma</td>
+                            <td>Documentário</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2024</td>
+                            <td class="titulo">Child Star</td>
+                            <td>Estreia como diretora!</td>
+                        </tr>
+                        <tr>
+                            <td class="ano">2025</td>
+                            <td class="titulo">Tow</td>
+                            <td>Nova</td>
+                            <td>Pós-produção</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, hic dolorem provident tempora illum quam vitae rerum cum adipisci, soluta porro alias natus repudiandae esse eaque nulla. Reprehenderit, placeat repellat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat rem ut officia molestiae consequatur minus maiores, iure sapiente sunt magni sed ea facere amet et doloremque cum fugit, harum id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolores consequuntur quis aliquid porro quos repudiandae, repellendus officia corporis sunt? Quod consequatur sapiente, iusto illo aspernatur labore totam modi magnam!</p>
             <aside>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque in, quis sit numquam voluptatem reprehenderit. Modi excepturi impedit blanditiis recusandae aspernatur, aut ipsam asperiores autem rerum saepe unde repellat dolorum!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eius mollitia laboriosam saepe hic temporibus voluptates rem officia quibusdam reprehenderit consequuntur provident dolor, aut, laudantium dicta ipsum sint similique dignissimos!</p>
@@ -231,7 +250,7 @@
         </article>
     </main>
     <footer>
-        <p>Desenvolvido por Andreza de Oliveira, 2025</p>
+        <p>Desenvolvido por <strong>Andreza de Oliveira</strong>, 2025</p>
     </footer>
 </body>
 </html>
