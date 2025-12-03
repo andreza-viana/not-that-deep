@@ -96,7 +96,6 @@ aside > h3 {
 main > aside > p {
     background-color: white;
     text-align: justify;
-    line-height: 30px;
     padding: 10px 10px 10px 15px;
     margin: auto;
 }
