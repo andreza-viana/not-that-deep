@@ -93,12 +93,11 @@ aside > h3 {
     padding: 7px;
     padding-left: 15px;;
 }
-aside > p {
+main > aside > p {
     background-color: white;
     text-align: justify;
-    text-indent: 10px;
     line-height: 30px;
-    padding: 10px 10px 2px 20px;
+    padding: 10px 10px 10px 15px;
     margin: auto;
 }
 main > aside > h3 {
