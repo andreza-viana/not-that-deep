@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <style>
         table {
-            width: 700px;
+            width: 600px;
             border-collapse: collapse;
             margin: auto;
             overflow-x: auto;
@@ -22,15 +22,17 @@
             font-weight: bold;
             padding: 10px;
         }
-        th, td {
+        tr, th, td {
             border: 1px solid black;
             padding: 8px;
+            overflow-x: auto;
         }
         th {
             background-color: rgb(233, 233, 103);
         }
         td {
             background-color: white;
+            overflow-x: auto;
         }
         .ano {
             text-align: center;
@@ -38,9 +40,11 @@
         h1 {
             font-family: var(--fonte-destaque);
         }
+        .tv, .cinema {
+            overflow-x: auto;
+        }
         .tv > table, .cinema > table {
             width: 600px;
-            overflow-x: auto;
             position: relative;
         }
         .tv > table > thead > tr > th {
@@ -49,7 +53,18 @@
             color: black;
             background-color: rgb(233, 233, 103);
         }
-
+        .cinema > table > thead > tr > th {
+            position: sticky;
+            top: -1px;
+            color: black;
+            background-color: rgb(233, 233, 103);
+        }
+        div.tv > table {
+            overflow-x: auto;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(228, 228, 228);
+        }
     </style>
 </head>
 <body>
@@ -72,10 +87,12 @@
                 <table>
                     <caption>Televisão</caption>
                     <thead>
-                        <th>Ano</th>
-                        <th>Título</th>
-                        <th>Papel</th>
-                        <th style="width: 300px;">Notas</th>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Título</th>
+                            <th>Papel</th>
+                            <th style="width: 300px;">Notas</th>
+                    </tr>
                     </thead>
                     <tbody>
                         <tr>
