@@ -49,7 +49,6 @@ main {
 }
 main > article {
     padding: 0px 20px 20px 20px;
-    border-radius: 10px 10px 10px 10px; 
 }
 main > article > h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
@@ -75,6 +74,7 @@ article > p > a {
 article > p > a:hover {
     text-decoration: underline;
     font-weight: bolder;
+    
 }
 article > ul.albuns {
     columns: 1;
@@ -82,7 +82,6 @@ article > ul.albuns {
     background-color: white;
     list-style-position: inside;
     list-style-type:'\1F3B5\00A0\00A0';
-    border-radius: 0px 0px 10px 10px;
 }
 main > aside {
     padding: 15px 20px 10px 20px;    
@@ -98,6 +97,7 @@ main > aside > p {
     text-align: justify;
     padding: 10px 10px 10px 15px;
     margin: auto;
+    
 }
 main > aside > h3 {
     background-color: #b499a1;
